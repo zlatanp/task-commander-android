@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Task Commander</string>
+    <string name="date_format">dd MMMM HH:mm</string>
+    <string name="complete_button_content">Complete</string>
+    <string name="completion_message">Your task has been successfully completed!</string>
+    <string name="groups_message">GROUPS</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="login_text">Sign in using:</string>
+
+    <string name="twitterConsumerKey">FcYvw4RClCggGM9wi1JTWbymC</string>
+    <string name="twitterConsumerKeySecret">d3nuysCRqGykcFQfS5GzgGUXPDUT2FXJW2inQbH1inxvaQM7WO</string>
+
+    <string name="google0AuthKey">526025813250-qigjhmrpuum95hlpsc5f3oam737uibfo.apps.googleusercontent.com</string>
+    <string name="google_login_failed">Connection error!</string>
+
+    <string name="open">open</string>
+    <string name="location">Location</string>
+    <string name="location_done">Done</string>
+    <string name="close">close</string>
+    <string name="title_activity_map">MapActivity</string>
+</resources>

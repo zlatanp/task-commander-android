@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorCompleteButton">#79c7e0</color>
+    <color name="colorPrimaryVeryLight">#646b67e7</color>
+    <color name="colorPrimaryLight">#5e70e2</color>
+    <color name="colorPassDeadline">#f4a142</color>
+</resources>

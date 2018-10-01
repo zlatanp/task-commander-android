@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--tools:context="com.example.android.taskcommander.activities.NewTaskActivity">-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <TableLayout
+        android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1">
+    <EditText
+        android:id="@+id/task_details_caption_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:hint="Task caption"
+        />
+
+    <EditText
+        android:id="@+id/task_details_description_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/task_details_caption_et"
+        android:hint="Task description"
+        />
+    <Spinner
+        android:id="@+id/members"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/task_details_description_et"
+        android:hint="Assignee"
+        />
+
+    <DatePicker
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/members"
+        android:ems="10"
+        android:inputType="date"
+        android:hint="Deadline date"
+        />
+
+    <TimePicker
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/date"
+        android:ems="10"
+        android:inputType="time"
+        android:hint="Deadline time"
+        />
+
+    <Button
+        android:id="@+id/create_task_btn"
+        android:onClick="onCreateTaskButtonClicked"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CREATE"
+        android:layout_below="@+id/time"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:background="@color/colorCompleteButton"
+        android:textColor="@color/colorPrimary"
+        />
+
+    </TableLayout>
+
+</ScrollView>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/member_row"
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:layout_alignParentLeft="true"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        />
+    <Button
+        android:id="@+id/remove_member_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="REMOVE"
+        android:theme="@style/ButtonStyle"/>
+
+</RelativeLayout>

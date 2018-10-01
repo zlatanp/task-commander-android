@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.taskcommander.activities.MapActivity">
+
+    <com.mapbox.mapboxsdk.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        mapbox:mapbox_cameraTargetLat="45.267136"
+        mapbox:mapbox_cameraTargetLng="19.833549"
+        mapbox:mapbox_cameraZoom="10"
+        mapbox:mapbox_cameraBearing="34.33"
+        mapbox:mapbox_cameraTilt="100.25"
+        mapbox:mapbox_styleUrl="@string/mapbox_style_satellite_streets"
+        mapbox:mapbox_cameraZoomMax="20.41"
+        mapbox:mapbox_cameraZoomMin="6"
+        mapbox:mapbox_uiRotateGestures="false"/>
+
+    <Button
+        android:id="@+id/location_done_btn"
+        android:onClick="locationDoneButtonClicked"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="@string/location_done"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:background="@color/colorCompleteButton"
+        android:textColor="@color/colorPrimary"
+        android:theme="@style/ButtonStyle"
+        android:layout_alignParentBottom="true"
+
+        />
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string-array name="navDrawerList">
+        <item>Groups</item>
+        <item>Tasks</item>
+        <item>Chat</item>
+    </string-array>
+
+
+    <string-array name="navDrawerFooterList">
+        <item>Share</item>
+        <item>About</item>
+        <item>Logout</item>
+    </string-array>
+
+</resources>

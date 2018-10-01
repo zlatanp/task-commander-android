@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.taskcommander.activities.NewGroupActivity">
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/new_group_name_et"
+        android:layout_width="match_parent"
+        android:layout_height="22pt"
+        android:inputType="text"
+        android:hint="Group name"/>
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/new_group_member_et"
+        android:layout_width="120pt"
+        android:layout_height="22pt"
+        android:layout_below="@+id/new_group_name_et"
+        android:hint="Group member email"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/add_member_button"
+        android:layout_width="50pt"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/new_group_name_et"
+        android:layout_toEndOf="@+id/new_group_member_et"
+        android:layout_toRightOf="@+id/new_group_member_et"
+        android:onClick="onAddMemberButtonClicked"
+        android:text="ADD"
+        android:theme="@style/ButtonStyle"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/members_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/new_group_member_et"
+        android:scrollbars="vertical" />
+
+    <Button
+        android:id="@+id/create_group_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:onClick="onCreateGroupButtonClicked"
+        android:text="DONE CREATING"
+        android:theme="@style/ButtonStyle"/>
+
+
+</RelativeLayout>

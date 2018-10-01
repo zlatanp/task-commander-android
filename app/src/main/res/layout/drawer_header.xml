@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryVeryLight">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:id="@+id/navDrawerAvatar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/test_avatar"
+            android:layout_margin="10dp"
+            android:onClick="onClick"
+            />
+
+
+        <ImageView
+            android:id="@+id/imageViewHeaderLoginMethod"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@+id/navDrawerAvatar"
+            android:layout_alignEnd="@+id/navDrawerAvatar"
+            android:layout_alignRight="@+id/navDrawerAvatar"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp">
+
+
+        <TextView
+            android:id="@+id/navDrawerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guest Login"
+            android:textSize="25sp"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:gravity="center"
+            android:layout_above="@+id/navDrawerEmail"
+            />
+
+
+        <TextView
+            android:id="@+id/navDrawerEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:maxLines="1"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

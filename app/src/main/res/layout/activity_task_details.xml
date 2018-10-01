@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.taskcommander.activities.TaskDetailsActivity">
+
+    <TextView
+        android:id="@+id/task_details_caption_tv"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:textSize="20dp"
+        android:textColor="@color/colorWhite"
+        android:gravity="center"
+        android:background="@color/colorPrimaryLight"
+        />
+
+    <TextView
+        android:id="@+id/task_details_description_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:textStyle="italic"
+        android:layout_below="@+id/task_details_caption_tv"
+        />
+
+    <Button
+        android:id="@+id/location_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/complete_btn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="15dp"
+        android:background="@color/colorCompleteButton"
+        android:onClick="locationButtonClicked"
+        android:padding="5dp"
+        android:text="@string/location"
+        android:textColor="@color/colorPrimary"
+        android:theme="@style/ButtonStyle" />
+
+    <Button
+        android:id="@+id/complete_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorCompleteButton"
+        android:onClick="completeButtonClicked"
+        android:padding="5dp"
+        android:text="@string/complete_button_content"
+        android:textColor="@color/colorPrimary"
+        android:theme="@style/ButtonStyle" />
+
+
+
+    <ProgressBar
+        android:id="@+id/complete_progress_spinning_loader"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible" />
+</RelativeLayout>
